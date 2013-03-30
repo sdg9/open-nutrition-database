@@ -14,3 +14,5 @@ end
 
 UPC_DATABASE_SECRET = "TESTMAN"
 UPC_DOT_COM_KEY     = "TESTMAN"
+
+require 'mocha/setup'
