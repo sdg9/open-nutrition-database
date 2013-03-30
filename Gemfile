@@ -5,6 +5,9 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'sqlite3'
 
+gem 'fatsecret-api', :require => 'fatsecret'
+gem 'httparty'
+gem 'libxml-xmlrpc', '0.1.5.patch1', :require => 'xml/libxml/xmlrpc'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
