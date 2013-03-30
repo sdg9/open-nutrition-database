@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<methodResponse>
+<params>
+<param><value><struct>
+<member><name>upc</name><value><string>044000046880</string></value>
+</member>
+<member><name>pendingUpdates</name><value><int>0</int></value>
+</member>
+<member><name>status</name><value><string>success</string></value>
+</member>
+<member><name>ean</name><value><string>0044000046880</string></value>
+</member>
+<member><name>issuerCountryCode</name><value><string>us</string></value>
+</member>
+<member><name>found</name><value><boolean>1</boolean></value>
+</member>
+<member><name>description</name><value><string>Nabisco Wheat Thins Crackers Original</string></value>
+</member>
+<member><name>message</name><value><string>Database entry found</string></value>
+</member>
+<member><name>size</name><value><string>4 oz</string></value>
+</member>
+<member><name>issuerCountry</name><value><string>United States</string></value>
+</member>
+<member><name>noCacheAfterUTC</name><value><dateTime.iso8601>2013-03-30T23:57:41</dateTime.iso8601></value>
+</member>
+<member><name>lastModifiedUTC</name><value><dateTime.iso8601>2001-08-30T23:28:52</dateTime.iso8601></value>
+</member>
+</struct></value>
+</param>
+</params>
+</methodResponse>
