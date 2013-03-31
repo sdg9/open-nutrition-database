@@ -3,7 +3,7 @@ module Upc
     class DatabaseDotOrg
 
       def self.resolve(upc)
-        resp = HTTParty.get("http://upcdatabase.org/api/json/#{UPC_DATABASE_SECRET}/#{upc}")
+        resp = HTTParty.get("http://upcdatabase.org/api/json/#{UPC_DOT_ORG_KEY}/#{upc}")
         return nil unless resp.success?
         return nil unless [true, "true"].include?(resp['valid'])
 

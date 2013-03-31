@@ -31,7 +31,7 @@ class ActiveSupport::TestCase
   end
 end
 
-UPC_DATABASE_SECRET = "TESTMAN"
+UPC_DOT_ORG_KEY     = "TESTMAN"
 UPC_DOT_COM_KEY     = "TESTMAN"
 FATSECRET_KEY       = 'TESTMAN'
 FATSECRET_SECRET    = 'TESTMAN'
