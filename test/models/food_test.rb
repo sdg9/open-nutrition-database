@@ -21,4 +21,15 @@ class FoodTest < ActiveSupport::TestCase
     end
 
   end
+
+  test "lookup not found" do
+    upc = "12345"
+
+    Nutrition::FatSecret.expects(:resolve).with(upc).returns(nil)
+
+    assert_no_difference 'Food.count' do
+      fetched_food = Food.from_upc(upc)
+      assert_nil fetched_food
+    end
+  end
 end

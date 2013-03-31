@@ -1,5 +1,3 @@
-require 'net/http'
-
 class Food < ActiveRecord::Base
   serialize :nutrition, JSON
   
@@ -8,7 +6,10 @@ class Food < ActiveRecord::Base
     food = Food.where(:upc => upc).first
     return food if food
 
-    nutrition_data = Nutrition::FatSecret.resolve(upc)
-    Food.create(nutrition_data)
+    nutrition_data = Nutrition::FatSecret.resolve(:upc => upc)
+    Rails.logger.info("Found: #{nutrition_data.inspect}")
+    return nil if nutrition_data.blank?
+
+    Food.create(nutrition_data.merge({:upc => upc}))
   end
 end
