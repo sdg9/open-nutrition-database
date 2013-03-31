@@ -43,4 +43,5 @@ gem 'jbuilder', '~> 1.0.1'
 group :test, :development do
   gem 'fakeweb'
   gem 'mocha', :require => false
+  gem 'factory_girl_rails'
 end

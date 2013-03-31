@@ -9,6 +9,7 @@ module Nutrition
       if query.blank?
         upc_details = Upc::Resolver.resolve(options[:upc]) 
         query = upc_details[:description] if upc_details
+        return nil if query.blank?
       end
       description = query.dup
 
@@ -16,12 +17,21 @@ module Nutrition
       query.gsub!(/&|'|"/, "").gsub!(" ", "%20")
 
       results = ::FatSecret.search_food(query)
+      if results.blank? || results['foods'].blank? || 
+        results['foods']['food'].blank?
+        return { :description => description }
+      end
+
       food = results['foods']['food']
       food = food.first if food.is_a?(Array)
 
       food_id = food['food_id']
-
       fsf = ::FatSecret.food(food_id)
+
+      if fsf.blank? || fsf['food'].blank? || fsf['food']['servings'].blank?
+        return { :description => description }
+      end
+
       product = fsf['food']
       serving = product['servings']
       serving = serving.first if serving.is_a?(Array)

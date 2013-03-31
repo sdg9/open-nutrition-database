@@ -14,8 +14,15 @@
 ActiveRecord::Schema.define(version: 20130330034140) do
 
   create_table "foods", force: true do |t|
+    t.string   "description"
+    t.string   "brand_name"
+    t.string   "product_name"
+    t.text     "nutrition"
+    t.string   "upc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "foods", ["upc"], name: "index_foods_on_upc"
 
 end
