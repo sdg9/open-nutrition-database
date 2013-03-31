@@ -13,7 +13,7 @@ class FoodTest < ActiveSupport::TestCase
     upc = "12345"
 
     nutrition_data = { :description => 'Cool Ranch Doritos' }
-    Nutrition::FatSecret.expects(:resolve).with(upc).returns(nutrition_data)
+    Nutrition::FatSecret.expects(:resolve).with(:upc => upc).returns(nutrition_data)
 
     assert_difference 'Food.count' do
       fetched_food = Food.from_upc(upc)
@@ -25,7 +25,7 @@ class FoodTest < ActiveSupport::TestCase
   test "lookup not found" do
     upc = "12345"
 
-    Nutrition::FatSecret.expects(:resolve).with(upc).returns(nil)
+    Nutrition::FatSecret.expects(:resolve).with(:upc => upc).returns(nil)
 
     assert_no_difference 'Food.count' do
       fetched_food = Food.from_upc(upc)

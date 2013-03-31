@@ -3,6 +3,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 FakeWeb.allow_net_connect = false
+Nutrition::FatSecret.sleep_amount = 0
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
