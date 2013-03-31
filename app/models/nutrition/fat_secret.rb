@@ -10,13 +10,12 @@ module Nutrition
         upc_details = Upc::Resolver.resolve(options[:upc]) 
         query = upc_details[:description] if upc_details
       end
+      description = query.dup
 
       # The API doesn't deal with ampersands or quotes well
-      query.gsub!(/&|'|"/, "")
+      query.gsub!(/&|'|"/, "").gsub!(" ", "%20")
 
-      puts "Query: #{query.inspect}"
-
-      results = ::FatSecret.search_food(query.gsub(" ", "%20"))
+      results = ::FatSecret.search_food(query)
       food = results['foods']['food']
       food = food.first if food.is_a?(Array)
 
@@ -28,10 +27,10 @@ module Nutrition
       serving = serving.first if serving.is_a?(Array)
       serving = serving['serving'] if serving.has_key?('serving')
 
-      nutrition = serving.deep_symbolize_keys.except(:serving_url)
+      nutrition = serving.deep_symbolize_keys.except(:serving_url, :serving_id)
 
       {
-        :description  => query,
+        :description  => description,
         :brand_name   => product['brand_name'],
         :product_name => product['food_name'],
         :nutrition    => nutrition
