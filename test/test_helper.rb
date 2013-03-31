@@ -31,12 +31,4 @@ class ActiveSupport::TestCase
   end
 end
 
-UPC_DOT_ORG_KEY     = "TESTMAN"
-UPC_DOT_COM_KEY     = "TESTMAN"
-FATSECRET_KEY       = 'TESTMAN'
-FATSECRET_SECRET    = 'TESTMAN'
-
-  FatSecret.init(FATSECRET_KEY,FATSECRET_SECRET)
-
-
 require 'mocha/setup'
