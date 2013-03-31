@@ -22,6 +22,16 @@ class ActiveSupport::TestCase
     end
   end
 
+  def self.setup_fat_secret_mocking
+    setup do
+      Nutrition::FatSecret.expects(:resolve).returns(nil).at_least(0)
+    end
+
+    teardown do
+      Nutrition::FatSecret.unstub(:resolve)
+    end
+  end
+
   def mock_upc(upc, description)
     return_value = {
       :upc         => upc,
