@@ -1,0 +1,88 @@
+
+.afs-colaborate { font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; ;}
+
+.afs-colaborate { font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em;}
+
+.afs-colaborate { font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em;}
+
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabbol-webfont.eot');
+src: local('☺'), url('/fonts/colabbol-webfont.woff') format('woff'), url('/fonts/colabbol-webfont.ttf') format('truetype'), url('/fonts/colabbol-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabmed-webfont.eot');
+src: local('☺'), url('/fonts/colabmed-webfont.woff') format('woff'), url('/fonts/colabmed-webfont.ttf') format('truetype'), url('/fonts/colabmed-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabthi-webfont.eot');
+src: local('☺'), url('/fonts/colabthi-webfont.woff') format('woff'), url('/fonts/colabthi-webfont.ttf') format('truetype'), url('/fonts/colabthi-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colablig-webfont.eot');
+src: local('☺'), url('/fonts/colablig-webfont.woff') format('woff'), url('/fonts/colablig-webfont.ttf') format('truetype'), url('/fonts/colablig-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 200;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabbol-webfont.eot');
+src: local('☺'), url('/fonts/colabbol-webfont.woff') format('woff'), url('/fonts/colabbol-webfont.ttf') format('truetype'), url('/fonts/colabbol-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabmed-webfont.eot');
+src: local('☺'), url('/fonts/colabmed-webfont.woff') format('woff'), url('/fonts/colabmed-webfont.ttf') format('truetype'), url('/fonts/colabmed-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabreg-webfont.eot');
+src: local('☺'), url('/fonts/colabreg-webfont.woff') format('woff'), url('/fonts/colabreg-webfont.ttf') format('truetype'), url('/fonts/colabreg-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colabthi-webfont.eot');
+src: local('☺'), url('/fonts/colabthi-webfont.woff') format('woff'), url('/fonts/colabthi-webfont.ttf') format('truetype'), url('/fonts/colabthi-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/colablig-webfont.eot');
+src: local('☺'), url('/fonts/colablig-webfont.woff') format('woff'), url('/fonts/colablig-webfont.ttf') format('truetype'), url('/fonts/colablig-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 200;
+font-style: normal;
+}

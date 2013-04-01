@@ -1,0 +1,150 @@
+body {
+  background: #f6f6f6 url('/assets/background.png') repeat fixed;
+  font-family:Helvetica;
+  font-weight:200;
+  font-size:15px;
+  
+}
+
+.logo {
+  position: absolute;
+  top:0px;
+  left:10px;
+  border:none;
+}
+
+.wrapper {
+  background-color:white;
+  width: 94%;
+  margin:auto;
+  margin-top:3px;
+  padding:10px;
+  border: 1px solid #EDEDED;
+}
+
+.left-half {
+  width:40%;
+  float:left;
+  background-color:black;
+  height:40;
+}
+
+.darker {
+padding: 10px;
+background-color: #F1F1F1;
+margin-bottom: 16px;
+}
+
+.right-half {
+  width:40%;
+  padding:2%;
+  float:left;
+  margin-left: 30px;
+}
+
+h2 {
+  margin: 3px;
+  font-weight:600;
+  font-family:Helvetica;
+}
+
+h3 {
+  margin: 3px;
+  font-weight: 200;
+  font-family:Colaborate;
+}
+
+.drop-zone {
+  margin-top:15px;
+}
+
+.highlight-color {
+ color: #66A0BB;
+}
+
+.number {
+  float:left;
+}
+
+.field {
+  float:left;
+  padding:4px;
+  padding-bottom:20px;
+}
+
+.clr {
+  clear:both;
+}
+
+select {
+  margin-left: 10px;
+}
+
+.hidden {
+  display:none;
+}
+
+.uploadWidget {
+  margin-left:10px;
+}
+
+.info-section {
+  padding: 10px;
+}
+
+input {
+  width: 200px;
+}
+
+.error {
+  color: #444444;
+  font-weight:bold;
+  display:block;
+  padding-bottom:0;
+}
+
+.field_with_errors {
+  background-color:#eaccd1;
+}
+
+.field_with_errors.field {
+  padding-bottom:4px;
+}
+
+.content-section {
+  padding: 10px;
+}
+
+#placeholder {
+  margin:30px;
+  width:700px;
+}
+.xAxis {
+  display:none;
+}
+
+.redirect-section {
+  height:126px;
+}
+.meter {
+  margin-top:10px !important;
+  margin-bottom:30px !important;
+}
+
+p { 
+  padding:3px;
+}
+
+.docs {
+  background-color:#EEEEEE;
+  padding:10px;
+}
+
+.code {
+  padding:5px;
+  font-family: lektonbold, Courier;
+}
+
+.code .details {
+  font-family: Helvetica;
+}

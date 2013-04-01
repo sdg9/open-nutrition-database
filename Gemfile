@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.beta1'
 
 gem 'pg'
+gem 'haml'
 
 gem 'fatsecret-api', :require => 'fatsecret'
 gem 'httparty'
@@ -22,6 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'unicorn'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
